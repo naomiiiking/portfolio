@@ -1,6 +1,6 @@
 export function About() {
   return (
-    <section id="about" className="tab-content">
+    <section id="about" className="tab-content active">
       <div className="about-row">
         <img src="/assets/dj.PNG" alt="Naomi DJing" className="about-image" />
         <div>

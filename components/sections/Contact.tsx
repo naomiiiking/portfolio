@@ -1,6 +1,6 @@
 export function Contact() {
   return (
-    <section id="contact" className="tab-content">
+    <section id="contact" className="tab-content active">
       <h2 className="section-title">Contact</h2>
       <div className="footer">
         <a href="https://github.com/naomiiiking" target="_blank" rel="noopener noreferrer">

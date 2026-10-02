@@ -22,7 +22,7 @@ export function Chat() {
   }, []);
 
   return (
-    <section id="chat" className="tab-content">
+    <section id="chat" className="tab-content active">
       <div className="terminal">
         <div className="terminal-content">
           <div className="terminal-line">
