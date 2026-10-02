@@ -9,6 +9,7 @@ import { About } from '@/components/sections/About';
 import { Chat } from '@/components/sections/Chat';
 import { Contact } from '@/components/sections/Contact';
 import { PortfolioFooter } from '@/components/PortfolioFooter';
+import { PrivacyPolicyToast } from '@/components/PrivacyPolicyToast';
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState('skills');
@@ -35,6 +36,7 @@ export default function Home() {
       </div>
 
       <PortfolioFooter />
+      <PrivacyPolicyToast />
     </div>
   );
 }

@@ -332,6 +332,13 @@ h2 {
     margin-right: 0;
 }
 
+.terminal-text {
+    color: var(--secondary-text);
+    font-size: 0.95rem;
+    margin-top: 1rem;
+    display: block;
+}
+
 .terminal-input {
     background: none;
     border: none;
@@ -470,6 +477,71 @@ a:focus-visible {
     fill: #10b981;
 }
 
+/* Privacy Policy Toast */
+.privacy-toast {
+    position: fixed;
+    bottom: -120px;
+    right: 2rem;
+    max-width: 400px;
+    background-color: var(--ground);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1.25rem 1rem 1.25rem 1.25rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    z-index: 50;
+    transition: bottom 0.3s ease-out;
+}
+
+.privacy-toast.visible {
+    bottom: 2rem;
+}
+
+.privacy-toast-content {
+    flex: 1;
+}
+
+.privacy-toast-text {
+    font-size: 0.9rem;
+    color: var(--secondary-text);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.privacy-toast-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.privacy-toast-link:hover {
+    text-decoration: underline;
+}
+
+.privacy-toast-close {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    background: none;
+    border: none;
+    color: var(--secondary-text);
+    cursor: pointer;
+    font-size: 1.25rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    font-family: inherit;
+}
+
+.privacy-toast-close:hover {
+    color: var(--text);
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
     * {
@@ -531,12 +603,25 @@ a:focus-visible {
     }
 
     .portfolio-link-container {
-        gap: 0.5rem;
-        padding: 0.6rem 1rem;
-        flex-direction: column;
+        display: none;
     }
 
     .portfolio-text {
         font-size: 0.8rem;
+    }
+
+    .privacy-toast {
+        max-width: calc(100vw - 2rem);
+        right: 1rem;
+        left: 1rem;
+        bottom: -120px;
+    }
+
+    .privacy-toast.visible {
+        bottom: 1rem;
+    }
+
+    .privacy-toast-text {
+        font-size: 0.85rem;
     }
 }

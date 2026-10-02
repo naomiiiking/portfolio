@@ -44,6 +44,9 @@ export function Chat() {
               }}
             />
           </div>
+          <div className="terminal-line">
+            <span className="terminal-text">Want a password? Message me on <a href="https://www.linkedin.com/in/naomi-king-0374891ba/">LinkedIn.</a></span>
+          </div>
         </div>
       </div>
     </section>
